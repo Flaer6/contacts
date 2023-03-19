@@ -1,0 +1,141 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: {
+    image: url("../images/bg.jpg");
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 10% 15px 0;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  opacity: 0.9;
+  min-height: 100vh;
+}
+
+.contacts {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #d3d3d3;
+  border: 1px solid #111;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px -2px 12px 0px #111 inset;
+  &__logo {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 500px;
+  }
+  p {
+    font-size: 18px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  &__list {
+    display: block;
+  }
+  &__list-link {
+    display: block;
+    box-shadow: 2px -2px 12px 0px #226f215c inset;
+    background-color: #5ccd6a;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: all .3s;
+    border: 1px solid #226f215c;
+    &:hover {
+      background-color: #54E165;
+    }
+    &:active {
+      background-color: #9CD3A3;
+    }
+  }
+}
